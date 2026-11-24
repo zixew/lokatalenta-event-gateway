@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lokatalenta.local/contracts/event-schema.json",
+  "title": "LokaTalentaNormalizedEvent",
+  "description": "Canonical real-time telemetry event contract between Ecosystem Apps, GitHub Webhooks, Event Gateway, and 3D Office.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "timestamp",
+    "source",
+    "type",
+    "divisionId",
+    "agentId",
+    "entityId",
+    "title",
+    "summary",
+    "targetZone",
+    "targetFloor",
+    "severity",
+    "metadata"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "description": "UUID or deterministic idempotency key."
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 UTC timestamp."
+    },
+    "source": {
+      "type": "string",
+      "enum": ["backlog", "sprint-planner", "docs", "lms-psikotes", "github", "office-sim"]
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "backlog.updated",
+        "sprint.updated",
+        "doc.updated",
+        "lms.activity",
+        "agent.task.completed",
+        "github.commit",
+        "github.pr",
+        "github.issue"
+      ]
+    },
+    "divisionId": {
+      "type": "string",
+      "enum": ["executive", "architecture", "engineering", "qa", "devops", "lounge"]
+    },
+    "agentId": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 23
+    },
+    "entityId": {
+      "type": ["string", "null"],
+      "maxLength": 128,
+      "description": "Domain entity identifier (e.g. BL-46, SPR-16, ADR-001, PR-42) or null if unattached."
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 500
+    },
+    "targetZone": {
+      "type": "string",
+      "enum": ["workspace", "boardroom", "cafeteria", "lobby", "lounge", "gym", "musholla"]
+    },
+    "targetFloor": {
+      "type": "integer",
+      "enum": [1, 2, 3]
+    },
+    "severity": {
+      "type": "string",
+      "enum": ["info", "success", "warning", "alert"]
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true,
+      "description": "Optional non-PII contextual payload (e.g. repo, branch, roomId, storyPoints)."
+    }
+  }
+}

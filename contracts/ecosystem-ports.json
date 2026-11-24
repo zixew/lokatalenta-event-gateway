@@ -1,0 +1,79 @@
+{
+  "version": "1.0.0",
+  "githubOwner": "zixew",
+  "avoidedHostPorts": [5000, 7000, 8089, 8091, 11301, 54321, 56211],
+  "services": [
+    {
+      "id": "lms-psikotes",
+      "name": "LokaTalenta Core LMS Psikotes",
+      "localPath": "/Users/a2299/Documents/Projects/lms-psikotes",
+      "githubRepo": "zixew/lokatalenta",
+      "githubUrl": "https://github.com/zixew/lokatalenta",
+      "apiPort": 4100,
+      "devUiPort": 4100,
+      "baseUrl": "http://localhost:4100",
+      "healthPath": "/"
+    },
+    {
+      "id": "lokatalenta-event-gateway",
+      "name": "LokaTalenta Real-Time Event Gateway",
+      "localPath": "/Users/a2299/Documents/Projects/lokatalenta-event-gateway",
+      "githubRepo": "zixew/lokatalenta-event-gateway",
+      "githubUrl": "https://github.com/zixew/lokatalenta-event-gateway",
+      "apiPort": 4101,
+      "devUiPort": null,
+      "baseUrl": "http://localhost:4101",
+      "wsUrl": "ws://localhost:4101/ws",
+      "sseUrl": "http://localhost:4101/events/stream",
+      "healthPath": "/health"
+    },
+    {
+      "id": "lokatalenta-backlog",
+      "name": "LokaTalenta Backlog & Grooming",
+      "localPath": "/Users/a2299/Documents/Projects/lokatalenta-backlog",
+      "githubRepo": "zixew/lokatalenta-backlog",
+      "githubUrl": "https://github.com/zixew/lokatalenta-backlog",
+      "apiPort": 4102,
+      "devUiPort": 4112,
+      "baseUrl": "http://localhost:4102",
+      "devUiUrl": "http://localhost:4112",
+      "healthPath": "/api/health"
+    },
+    {
+      "id": "lokatalenta-sprint-planner",
+      "name": "LokaTalenta Sprint Planner",
+      "localPath": "/Users/a2299/Documents/Projects/lokatalenta-sprint-planner",
+      "githubRepo": "zixew/lokatalenta-sprint-planner",
+      "githubUrl": "https://github.com/zixew/lokatalenta-sprint-planner",
+      "apiPort": 4103,
+      "devUiPort": 4113,
+      "baseUrl": "http://localhost:4103",
+      "devUiUrl": "http://localhost:4113",
+      "healthPath": "/api/health"
+    },
+    {
+      "id": "lokatalenta-docs",
+      "name": "LokaTalenta Documentation Hub",
+      "localPath": "/Users/a2299/Documents/Projects/lokatalenta-docs",
+      "githubRepo": "zixew/lokatalenta-docs",
+      "githubUrl": "https://github.com/zixew/lokatalenta-docs",
+      "apiPort": 4104,
+      "devUiPort": 4114,
+      "baseUrl": "http://localhost:4104",
+      "devUiUrl": "http://localhost:4114",
+      "healthPath": "/api/health"
+    },
+    {
+      "id": "lokatalenta-office-3d",
+      "name": "LokaTalenta 3D Office HQ",
+      "localPath": "/Users/a2299/Documents/Projects/lokatalenta-office-3d",
+      "githubRepo": "zixew/lokatalenta-office-3d",
+      "githubUrl": "https://github.com/zixew/lokatalenta-office-3d",
+      "apiPort": 4105,
+      "devUiPort": 4105,
+      "baseUrl": "http://localhost:4105",
+      "devUiUrl": "http://localhost:4105",
+      "healthPath": "/"
+    }
+  ]
+}

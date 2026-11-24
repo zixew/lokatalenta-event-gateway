@@ -1,0 +1,71 @@
+{
+  "version": "1.0.0",
+  "divisions": [
+    {
+      "id": "executive",
+      "name": "Eksekutif & Tata Kelola Produk",
+      "shortName": "🏛️ Eksekutif & Manajemen (3)",
+      "motto": "Integritas Tanpa Kompromi, Nilai Bisnis Berkelanjutan",
+      "color": "#3b82f6",
+      "threeColor": "0x3b82f6",
+      "defaultFloor": 3,
+      "defaultZone": "workspace",
+      "agentIds": [0, 1, 2]
+    },
+    {
+      "id": "architecture",
+      "name": "Arsitektur Sistem & Inovasi AI",
+      "shortName": "📐 Arsitektur & AI (3)",
+      "motto": "Presisi Fondasi, Arsitektur Heksagonal, Kecerdasan Teruji",
+      "color": "#8b5cf6",
+      "threeColor": "0x8b5cf6",
+      "defaultFloor": 3,
+      "defaultZone": "workspace",
+      "agentIds": [3, 4, 21]
+    },
+    {
+      "id": "engineering",
+      "name": "Studio Core Engineering & Product Craft",
+      "shortName": "💻 Core Engineering (5)",
+      "motto": "Kode Bersih, Performa Tangguh, Anti-AI-Slop Visual System",
+      "color": "#10b981",
+      "threeColor": "0x10b981",
+      "defaultFloor": 2,
+      "defaultZone": "workspace",
+      "agentIds": [5, 6, 18, 19, 20]
+    },
+    {
+      "id": "qa",
+      "name": "Laboratorium Jaminan Kualitas & Otomasi",
+      "shortName": "🔬 QA & Testing Lab (4)",
+      "motto": "Nol Cacat Produksi, Validasi Ketat, Cakupan Uji 100%",
+      "color": "#f59e0b",
+      "threeColor": "0xf59e0b",
+      "defaultFloor": 2,
+      "defaultZone": "workspace",
+      "agentIds": [7, 8, 9, 10]
+    },
+    {
+      "id": "devops",
+      "name": "Pusat Operasional Cloud, DevOps & Keamanan Siber",
+      "shortName": "⚡ Security & DevOps (5)",
+      "motto": "Pertahanan Berlapis Zero Trust, Rilis Tanpa Henti, Kepatuhan UU PDP",
+      "color": "#06b6d4",
+      "threeColor": "0x06b6d4",
+      "defaultFloor": 3,
+      "defaultZone": "workspace",
+      "agentIds": [11, 12, 16, 17, 22]
+    },
+    {
+      "id": "lounge",
+      "name": "Stakeholder & User Experience Lounge",
+      "shortName": "☕ Stakeholder Lounge (4)",
+      "motto": "Suara Nyata Pengguna, Advokasi Inklusif, Dampak Bermakna",
+      "color": "#ec4899",
+      "threeColor": "0xec4899",
+      "defaultFloor": 2,
+      "defaultZone": "lounge",
+      "agentIds": [13, 14, 15, 23]
+    }
+  ]
+}
